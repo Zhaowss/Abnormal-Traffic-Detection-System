@@ -1,0 +1,12 @@
+2024-10-18 21:14:59.556 | INFO     | __main__:classify:27 - 任务类型：0
+2024-10-18 21:14:59.559 | INFO     | __main__:classify:28 - 图片文件：hangout_chat_4b_1729257087121.pcap.TCP_131-202-240-242_32506_173-194-210-188_5228.png
+2024-10-18 21:14:59.616 | ERROR    | __main__:classify:47 - RuntimeError('Numpy is not available')
+2024-10-18 21:15:19.690 | INFO     | __main__:classify:27 - 任务类型：0
+2024-10-18 21:15:19.693 | INFO     | __main__:classify:28 - 图片文件：hangout_chat_4b_1729257087121.pcap.TCP_131-202-240-242_32506_173-194-210-188_5228.png
+2024-10-18 21:15:19.700 | ERROR    | __main__:classify:47 - RuntimeError('Numpy is not available')
+2024-10-18 21:15:39.762 | INFO     | __main__:classify:27 - 任务类型：0
+2024-10-18 21:15:39.764 | INFO     | __main__:classify:28 - 图片文件：hangout_chat_4b_1729257087121.pcap.TCP_131-202-240-242_32506_173-194-210-188_5228.png
+2024-10-18 21:15:39.767 | ERROR    | __main__:classify:47 - RuntimeError('Numpy is not available')
+2024-10-18 21:15:59.811 | INFO     | __main__:classify:27 - 任务类型：0
+2024-10-18 21:15:59.812 | INFO     | __main__:classify:28 - 图片文件：hangout_chat_4b_1729257087121.pcap.TCP_131-202-240-242_32506_173-194-210-188_5228.png
+2024-10-18 21:15:59.817 | ERROR    | __main__:classify:47 - RuntimeError('Numpy is not available')

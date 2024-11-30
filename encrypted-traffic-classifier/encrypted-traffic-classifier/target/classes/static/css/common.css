@@ -1,0 +1,109 @@
+.layui-form-select dl dd.layui-this {
+    color: #1E9FFF !important;
+}
+
+.layui-form-checked[lay-skin=primary] > i {
+    border-color: #1E9FFF !important;
+    background-color: #1E9FFF !important;
+}
+
+.layui-form-checkbox[lay-skin=primary]:hover > i {
+    border-color: #1E9FFF !important;
+}
+
+.layui-form-checkbox[lay-skin=primary] > .layui-icon-indeterminate {
+    border-color: #1E9FFF !important;
+}
+
+.layui-form-checkbox[lay-skin=primary] > .layui-icon-indeterminate:before {
+    background-color: #1E9FFF !important;
+}
+
+.layui-table-checked {
+    background-color: #f7f7f7 !important;
+}
+
+.layui-table-checked.layui-table-click, .layui-table-checked.layui-table-hover {
+    background-color: #f7f7f7 !important;
+}
+
+.layui-laydate-footer span:hover {
+    color: #1E9FFF !important;
+}
+
+.layui-laydate-footer span[lay-type=date] {
+    color: #777777 !important;
+}
+
+.layui-laydate-linkage .layui-laydate-content td.laydate-selected > div {
+    background-color: #f7f7f7 !important;
+}
+
+.layui-upload-drag .layui-icon {
+    color: #1E9FFF !important;
+}
+
+.layui-input:focus, .layui-textarea:focus {
+    border-color: #1E9FFF !important;
+}
+
+.layui-btn-primary:hover {
+    border-color: #1E9FFF !important;
+}
+
+.layui-table-page {
+    text-align: center;
+}
+
+.layui-laypage .layui-laypage-curr .layui-laypage-em {
+    background-color: #1E9FFF !important;
+}
+
+.layui-laypage input:focus, .layui-laypage select:focus {
+    border-color: #1E9FFF !important;
+}
+
+.layui-laypage a:hover {
+    color: #1E9FFF !important;
+}
+
+.layui-table-cell-c:hover {
+    border-color: #1E9FFF !important;
+}
+
+.xm-tips {
+    color: #6b6b6b !important;
+}
+
+.layuimini-tab .layui-tab-tool .layui-this a {
+    background-color: #1E9FFF !important;
+}
+
+.layui-transfer-active .layui-btn {
+    background-color: #1E9FFF !important;
+    border-color: #1E9FFF !important;
+}
+
+.layui-elem-quote {
+    border-left: 5px solid #1E9FFF !important;
+}
+
+.layui-bg-silk-deep-blue {
+    background-color: rgb(237, 245, 245) !important;
+    color: rgb(27, 99, 136) !important;
+}
+
+.layui-bg-silk-deep-pink {
+    background-color: rgb(252, 238, 243) !important;
+    color: rgb(202, 40, 102) !important;
+}
+
+.layui-bg-silk-deep-green {
+    background-color: rgb(237, 251, 243) !important;
+    color: rgb(90, 189, 112) !important;
+}
+
+.layui-bg-silk-deep-purple {
+    background-color: rgb(237, 251, 243) !important;
+    color: #a233c6 !important;
+}

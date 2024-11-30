@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">
+        <title>基本资料</title>
+        <meta name="keywords" content="基本资料">
+        <meta name="description" content="基本资料">
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="Access-Control-Allow-Origin" content="*">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="format-detection" content="telephone=no">
+        <link rel="icon" th:href="@{/static/images/favicon.ico}">
+        <link rel="stylesheet" th:href="@{/static/layuimini-v2/lib/layui-v2.9.17/css/layui.css}" media="all">
+        <link rel="stylesheet" th:href="@{/static/layuimini-v2/css/public.css}" media="all">
+        <link rel="stylesheet" th:href="@{/static/layuimini-v2/lib/font-awesome-4.7.0/css/font-awesome.min.css}"
+              media="all">
+        <link rel="stylesheet" th:href="@{/static/css/common.css}" media="all">
+        <!--[if lt IE 9]>
+        <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+        <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <style>
+            body {
+                background-color: #ffffff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="layui-form layuimini-form" lay-filter="currentFormFilter"
+             style="margin-top: 50px; margin-right: 50px; margin-bottom: 50px;">
+            <div class="layui-form-item">
+                <label class="layui-form-label required">用户名</label>
+                <div class="layui-input-block">
+                    <input type="text" name="userName" lay-verify="required" placeholder="用户名" lay-reqtext="请填写用户名"
+                           autocomplete="off" class="layui-input" lay-affix="clear">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn layui-bg-blue" lay-submit lay-filter="confirm">
+                        <i class="layui-icon layui-icon-ok-circle"></i>&nbsp;确认&nbsp;
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script th:src="@{/static/layuimini-v2/lib/layui-v2.9.17/layui.js}" charset="utf-8"></script>
+        <script th:src="@{/static/layuimini-v2/js/lay-config.js}" charset="utf-8"></script>
+        <script th:src="@{/static/js/common.js}" charset="utf-8"></script>
+        <script th:src="@{/static/js/users/user_setting.js}" charset="utf-8"></script>
+    </body>
+</html>

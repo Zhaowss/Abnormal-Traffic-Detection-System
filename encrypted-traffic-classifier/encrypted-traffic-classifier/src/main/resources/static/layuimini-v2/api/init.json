@@ -1,0 +1,79 @@
+{
+  "homeInfo": {
+    "title": "分类统计信息",
+    "href": "resultStatistics"
+  },
+  "logoInfo": {
+    "title": "加密流量分类系统",
+    "image": "static/images/logo.png",
+    "href": "/"
+  },
+  "menuInfo": [
+    {
+      "title": "系统管理",
+      "icon": "fa fa-cogs",
+      "href": "",
+      "target": "_self",
+      "child": [
+        {
+          "title": "用户管理",
+          "icon": "fa fa-user",
+          "href": "userList",
+          "target": "_self"
+        },
+        {
+          "title": "接口管理",
+          "icon": "fa fa-code",
+          "href": "swagger-ui/index.html",
+          "target": "_self"
+        }
+      ]
+    },
+    {
+      "title": "流量采集",
+      "icon": "fa fa-sliders",
+      "href": "",
+      "target": "_self",
+      "child": [
+        {
+          "title": "流量捕获",
+          "icon": "fa fa-wrench",
+          "href": "trafficGather",
+          "target": "_self"
+        },
+        {
+          "title": "流量管理",
+          "icon": "fa fa-exchange",
+          "href": "trafficList",
+          "target": "_self"
+        }
+      ]
+    },
+    {
+      "title": "加密流量分类",
+      "icon": "fa fa-random",
+      "href": "",
+      "target": "_self",
+      "child": [
+        {
+          "title": "加密流量上传",
+          "icon": "fa fa-upload",
+          "href": "taskAdd",
+          "target": "_self"
+        },
+        {
+          "title": "分类任务管理",
+          "icon": "fa fa-cube",
+          "href": "taskList",
+          "target": "_self"
+        }
+      ]
+    },
+    {
+      "title": "分类统计信息",
+      "icon": "fa fa-pie-chart",
+      "href": "resultStatistics",
+      "target": "_self"
+    }
+  ]
+}

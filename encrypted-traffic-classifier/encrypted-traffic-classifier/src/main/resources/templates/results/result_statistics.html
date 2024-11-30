@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">
+        <title>结果统计</title>
+        <meta name="keywords" content="结果统计">
+        <meta name="description" content="结果统计">
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="Access-Control-Allow-Origin" content="*">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="format-detection" content="telephone=no">
+        <link rel="icon" th:href="@{/static/images/favicon.ico}">
+        <link rel="stylesheet" th:href="@{/static/layuimini-v2/lib/layui-v2.9.17/css/layui.css}" media="all">
+        <link rel="stylesheet" th:href="@{/static/layuimini-v2/css/public.css}" media="all">
+        <link rel="stylesheet" th:href="@{/static/layuimini-v2/lib/font-awesome-4.7.0/css/font-awesome.min.css}"
+              media="all">
+        <link rel="stylesheet" th:href="@{/static/css/common.css}" media="all">
+        <link rel="stylesheet" th:href="@{/static/css/home.css}" media="all">
+        <!--[if lt IE 9]>
+        <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+        <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="layuimini-container">
+            <div class="layuimini-main">
+                <div class="layui-row layui-col-space15">
+                    <div class="layui-col-md6">
+                        <div class="layui-card">
+                            <div class="layui-card-header">
+                                <i class="fa fa-dashboard icon icon-blue"></i>实时数据统计
+                            </div>
+                            <div class="layui-card-body">
+                                <div class="welcome-module">
+                                    <div class="layui-row layui-col-space10">
+                                        <div class="layui-col-xs6">
+                                            <div class="panel layui-bg-number">
+                                                <div class="panel-body">
+                                                    <div class="panel-title">
+                                                        <span class="label pull-right layui-bg-blue"
+                                                              style="font-size: 12px;">实时</span>
+                                                        <h5 style="font-size: 14px;">系统用户统计</h5>
+                                                    </div>
+                                                    <div class="panel-content">
+                                                        <hr>
+                                                        <h1 class="no-margins"><span id="userCount">未知</span></h1>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="layui-col-xs6">
+                                            <div class="panel layui-bg-number">
+                                                <div class="panel-body">
+                                                    <div class="panel-title">
+                                                        <span class="label pull-right layui-bg-red"
+                                                              style="font-size: 12px;">实时</span>
+                                                        <h5 style="font-size: 14px;">流量采集统计</h5>
+                                                    </div>
+                                                    <div class="panel-content">
+                                                        <hr>
+                                                        <h1 class="no-margins"><span id="trafficCount">未知</span></h1>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="layui-col-xs6">
+                                            <div class="panel layui-bg-number">
+                                                <div class="panel-body">
+                                                    <div class="panel-title">
+                                                        <span class="label pull-right layui-bg-orange"
+                                                              style="font-size: 12px;">实时</span>
+                                                        <h5 style="font-size: 14px;">分类任务统计</h5>
+                                                    </div>
+                                                    <div class="panel-content">
+                                                        <hr>
+                                                        <h1 class="no-margins"><span id="taskCount">未知</span></h1>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="layui-col-xs6">
+                                            <div class="panel layui-bg-number">
+                                                <div class="panel-body">
+                                                    <div class="panel-title">
+                                                        <span class="label pull-right layui-bg-green"
+                                                              style="font-size: 12px;">实时</span>
+                                                        <h5 style="font-size: 14px;">分类结果统计</h5>
+                                                    </div>
+                                                    <div class="panel-content">
+                                                        <hr>
+                                                        <h1 class="no-margins"><span id="resultCount">未知</span></h1>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-col-md6">
+                        <div class="layui-card">
+                            <div class="layui-card-header">
+                                <i class="fa fa-credit-card icon icon-blue"></i>系统快捷入口
+                            </div>
+                            <div class="layui-card-body">
+                                <div class="welcome-module">
+                                    <div class="layui-row layui-col-space10 layuimini-qiuck">
+                                        <div class="layui-col-xs3 layuimini-qiuck-module">
+                                            <a href="javascript:;" layuimini-content-href="userList"
+                                               data-title="用户管理" data-icon="fa fa-user">
+                                                <i class="fa fa-user"></i>
+                                                <cite>用户管理</cite>
+                                            </a>
+                                        </div>
+                                        <div class="layui-col-xs3 layuimini-qiuck-module">
+                                            <a href="javascript:;" layuimini-content-href="swagger-ui/index.html"
+                                               data-title="接口管理" data-icon="fa fa-code">
+                                                <i class="fa fa-code"></i>
+                                                <cite>接口管理</cite>
+                                            </a>
+                                        </div>
+                                        <div class="layui-col-xs3 layuimini-qiuck-module">
+                                            <a href="javascript:;" layuimini-content-href="trafficGather"
+                                               data-title="流量捕获" data-icon="fa fa-wrench">
+                                                <i class="fa fa-wrench"></i>
+                                                <cite>流量捕获</cite>
+                                            </a>
+                                        </div>
+                                        <div class="layui-col-xs3 layuimini-qiuck-module">
+                                            <a href="javascript:;" layuimini-content-href="trafficList"
+                                               data-title="流量管理" data-icon="fa fa-exchange">
+                                                <i class="fa fa-exchange"></i>
+                                                <cite>流量管理</cite>
+                                            </a>
+                                        </div>
+                                        <div class="layui-col-xs3 layuimini-qiuck-module">
+                                            <a href="javascript:;" layuimini-content-href="taskAdd"
+                                               data-title="加密流量上传" data-icon="fa fa-upload">
+                                                <i class="fa fa-upload"></i>
+                                                <cite>加密流量上传</cite>
+                                            </a>
+                                        </div>
+                                        <div class="layui-col-xs3 layuimini-qiuck-module">
+                                            <a href="javascript:;" layuimini-content-href="taskList"
+                                               data-title="分类任务管理" data-icon="fa fa-cube">
+                                                <i class="fa fa-cube"></i>
+                                                <cite>分类任务管理</cite>
+                                            </a>
+                                        </div>
+                                        <div class="layui-col-xs3 layuimini-qiuck-module">
+                                            <a href="javascript:;" layuimini-content-href="userPassword"
+                                               data-title="修改密码" data-icon="fa fa-unlock-alt">
+                                                <i class="fa fa-unlock-alt"></i>
+                                                <cite>修改密码</cite>
+                                            </a>
+                                        </div>
+                                        <div class="layui-col-xs3 layuimini-qiuck-module">
+                                            <a href="javascript:;" layuimini-content-href="userSetting"
+                                               data-title="基本资料" data-icon="fa fa-file-text">
+                                                <i class="fa fa-file-text"></i>
+                                                <cite>基本资料</cite>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-row layui-col-space15">
+                    <div class="layui-col-md6">
+                        <div class="layui-card">
+                            <div class="layui-card-header">
+                                <i class="fa fa-pie-chart icon icon-blue"></i>加密良性流量统计
+                            </div>
+                            <div class="layui-card-body">
+                                <div id="echarts-pie-benign" style="width: 100%; min-height: 300px"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-col-md6">
+                        <div class="layui-card">
+                            <div class="layui-card-header">
+                                <i class="fa fa-pie-chart icon icon-blue"></i>加密恶意流量统计
+                            </div>
+                            <div class="layui-card-body">
+                                <div id="echarts-pie-malicious" style="width: 100%; min-height: 300px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script th:src="@{/static/layuimini-v2/lib/layui-v2.9.17/layui.js}" charset="utf-8"></script>
+        <script th:src="@{/static/layuimini-v2/js/lay-config.js}" charset="utf-8"></script>
+        <script th:src="@{/static/js/common.js}" charset="utf-8"></script>
+        <script th:src="@{/static/js/results/result_statistics.js}" charset="utf-8"></script>
+        <script th:src="@{/static/layuimini-v2/lib/echarts-v5.5.1/echarts.min.js}" charset="utf-8"></script>
+    </body>
+</html>
